@@ -1,0 +1,116 @@
+.maincontainer{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+// Header
+header {
+  background-color: black;
+  line-height: 90px;
+  position: sticky;
+  top: 0;
+
+  & > nav {
+    & > ul {
+      width: 1200px;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      & > li {
+        & > .nav-link {
+          font-family: "Roboto", sans-serif;
+          color: rgb(235, 226, 226);
+          font-size: 16px;
+          list-style: none;
+          cursor: pointer;
+          text-decoration: none;
+        }
+        :hover {
+          color: rgb(177, 170, 170);
+        }
+      }
+
+      & > button {
+        font-family: "Roboto", sans-serif;
+        width: 120px;
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        height: 40px;
+        cursor: pointer;
+        border: 1px white solid;
+      }
+    }
+  }
+}
+
+// Home
+.s-1{
+    padding-top: 100px;
+
+    & > .Homehead{
+        text-align: center;
+
+        & > h3{
+            font-size: 40px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        & > h5{
+            font-size: 25px;
+            font-family: 'Caveat', cursive;
+            margin-bottom: 50px
+        }
+    }
+
+    & > img{
+        width: 100%;
+    }
+
+    & > .formwrapper{
+        margin: 50px 0 50px 0;
+
+        & > form{
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            padding: 0 15px;
+
+            & > div{
+                display: flex;
+                flex-direction: column;
+
+                & > label{
+                    font-size: 14px;
+                    font-family: 'Roboto', sans-serif;
+                }
+
+                & > input[type=date] {
+                    width: 250px;
+                    height: 30px;
+                    font-size: 15px;
+                    color: rgb(44, 40, 40);
+                }
+
+                & > input[type=number] {
+                    width: 130px;
+                    height: 30px;
+                    font-size: 15px;
+                    color: rgb(44, 40, 40);
+                }
+            }
+
+            & > button{
+                width: 160px;
+                height: 30px;
+                background-color: rgb(29, 26, 26);
+                color: white;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+    }
+}
