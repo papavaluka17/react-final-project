@@ -2,7 +2,7 @@ import garden from '../images/img.webp'
 
 export default function Home() {
     return (
-        <section className="s-1" id="Home">
+        <section className="s-1" >
             <div className="Homehead">
                 <h3>ANTON & LILY</h3>
                 <h5>Bed & Breakfast</h5>
@@ -24,7 +24,7 @@ export default function Home() {
                     </div>
                     <div>
                         <label htmlFor='Kids' >Kids</label>
-                        <input id='Kids' type='number' min='0' max='5'  required />
+                        <input id='Kids' type='number' min='0' max='5' />
                     </div>
                     <button>Search</button>
                 </form>
