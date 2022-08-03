@@ -1,3 +1,6 @@
+@import url("//cdn.web-fonts.ge/fonts/bpg-mikheil-stefane/css/bpg-mikheil-stefane.min.css");
+
+
 .maincontainer {
   max-width: 1200px;
   width: 100%;
@@ -26,7 +29,7 @@ header{
         & > li {
           & > .nav-link {
             font-family: "Roboto", sans-serif;
-            color: rgb(235, 226, 226);
+                    color: rgb(235, 226, 226);
             font-size: 16px;
             list-style: none;
             cursor: pointer;
@@ -41,7 +44,7 @@ header{
     & > .Btnlink{
       & > .mainbtn {
         font-family: "Roboto", sans-serif;
-        width: 120px;
+            width: 140px;
         background-color: black;
         color: white;
         font-weight: bold;
@@ -50,6 +53,12 @@ header{
         cursor: pointer;
         border: 1px white solid;
       }
+    }
+
+    & > .lng{
+      color: white;
+      background-color: black;
+      border: 1px white solid;
     }
   
     & > .menu {
@@ -74,14 +83,14 @@ header{
 
     & > h3 {
       font-size: 40px;
-      font-family: "Roboto", sans-serif;
+        font-family: "Roboto", sans-serif;
       font-weight: bold;
       margin-bottom: 20px;
     }
 
     & > h5 {
       font-size: 25px;
-      font-family: "Caveat", cursive;
+        font-family: "Caveat", cursive;
       margin-bottom: 50px;
     }
   }
@@ -106,7 +115,7 @@ header{
         & > label {
           font-size: 14px;
           font-family: "Roboto", sans-serif;
-        }
+              }
 
         & > input[type="date"] {
           width: 250px;
@@ -145,7 +154,9 @@ header{
     margin-bottom: 35px;
   }
 
-  & > p{
+  & > p{ 
+    width: 420px;
+    margin: 0 auto;
     font-size: 20px;
     font-family: "Caveat", cursive;
     line-height: 1.5;
@@ -153,6 +164,7 @@ header{
   }
 }
 
+// icons
 .socialicons{
   display: flex;
   flex-direction: column;
@@ -170,6 +182,7 @@ header{
   }
 }
 
+// Our Rooms
 .s-3{
   background-image: url(../images/Background.webp);
   background-position: center;
@@ -197,6 +210,8 @@ header{
     }
 
     & > p{
+      margin:  0 auto;
+      width: 70%;
       font-size: 21px;
       font-family: "Caveat", cursive;
       line-height: 1.5;
@@ -218,8 +233,7 @@ header{
   }
 }
 
-
-
+// Welcome page
 .welcome-section{
   background-color: black;
   text-align: center;
@@ -279,3 +293,6 @@ header{
     }
   }
 }
+
+// Our Services
+

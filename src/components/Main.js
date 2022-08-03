@@ -1,7 +1,7 @@
 import Home from "./Home";
 import About from "./About";
 import Rooms from "./Rooms";
-// import Welcome from "./Welcome";
+import Services from "./Services";
 
 export default function Main() {
     return(
@@ -9,7 +9,7 @@ export default function Main() {
             <Home />
             <About />
             <Rooms />
-            {/* <Welcome /> */}
+            <Services />
         </div>
     )
 }
