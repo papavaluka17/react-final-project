@@ -3,6 +3,7 @@ import About from "./About";
 import Rooms from "./Rooms";
 import Services from "./Services";
 import Gallery from "./Gallery";
+import Review from "./Review";
 
 export default function Main() {
     return(
@@ -12,6 +13,7 @@ export default function Main() {
             <Rooms />
             <Services />
             <Gallery />
+            <Review />
         </div>
     )
 }

@@ -64,9 +64,6 @@ export default function Header() {
                             <Link smooth className="nav-link" to={'/Main'}>{t("GALLERY")}</Link>
                         </li>
                         <li>
-                            <Link smooth className="nav-link" to={'/Main'}>{t("SEE & DO")}</Link>
-                        </li>
-                        <li>
                             <Link smooth className="nav-link" to={'/Main'}>{t("CONTACT")}</Link>
                         </li>
                     </ul>
