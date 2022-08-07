@@ -1,5 +1,5 @@
 import fb from "../images/fb.png"
-import instagram from "../images/instagram.png"
+import instagram from "../images/87390.png"
 import tripadviusor from "../images/tripadviusor.png"
 
 export default function Social() {

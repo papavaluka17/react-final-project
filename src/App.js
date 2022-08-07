@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import BookaRoom from './components/BookaRoom';
+import Footer from './components/Footer';
 import Header from './components/Header';
 import Main from './components/Main';
 import Welcome from './components/Welcome';
@@ -7,7 +8,7 @@ import './scss/global.scss'
 
 function App() {
   return (
-    <div className="App">
+    <div >
       <Header />
       <div className='maincontainer'>
         <Routes>
@@ -16,6 +17,7 @@ function App() {
           <Route path="BookaRoom" element={<BookaRoom />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 }
