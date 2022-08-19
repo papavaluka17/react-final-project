@@ -27,7 +27,7 @@ export default function BookaRoom() {
                                         <h6>From</h6>
                                         <span>{item.Price}</span>
                                         <br />
-                                        <Link to="/" className="moreinfo">
+                                        <Link to={`${item.id}`} className="moreinfo">
                                             <button>More info</button>
                                         </Link>
                                     </div>
