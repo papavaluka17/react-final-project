@@ -1,5 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import BookaRoom from './components/BookaRoom';
+import Details from './components/Details';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Main from './components/Main';
@@ -17,6 +18,7 @@ function App() {
           <Route path="/Main" element={<Main />} />
           <Route path="BookaRoom" element={<BookaRoom />} />
           <Route path="BookaRoom/:id" element={<Roominfo />} />
+          <Route path="Details" element={<Details />} />
         </Routes>
       </div>
       <Footer />

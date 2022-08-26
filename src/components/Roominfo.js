@@ -96,7 +96,7 @@ export default function Roominfo() {
                                     <p>Per Night</p>
                                 </div>
 
-                                <form action='/BookaRoom'>
+                                <form action="/Details">
                                     <div>
                                         <label htmlFor='Checkin' >Check-in</label>
                                         <input id='Checkin' type='date' required />
@@ -113,9 +113,7 @@ export default function Roominfo() {
                                         <label htmlFor='Kids' >Kids</label>
                                         <input id='Kids' type='number' min='0' max='1' />
                                     </div>
-                                    <Link className="btn" to="/BookaRoom">
-                                        <button>Book Now</button>
-                                    </Link>
+                                    <input type="Submit" className="btn" />
                                 </form>
                             </div>
                         </div>

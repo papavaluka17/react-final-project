@@ -520,7 +520,7 @@ header {
       }
     }
 
-    & > button {
+    & > input {
       width: 100%;
       height: 35px;
       background-color: black;
@@ -847,12 +847,111 @@ header {
         }
 
         & > .btn {
-          & > button {
-            background-color: black;
-            color: white;
+          background-color: black;
+          color: white;
+          font-family: "Roboto", sans-serif;
+          width: 100%;
+          padding: 6px 0;
+        }
+      }
+    }
+  }
+}
+
+// Details
+.s-7 {
+  margin-top: 130px;
+
+  & > h4 {
+    font-size: 25px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(63, 54, 54);
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  & > .Details-wrap {
+    margin: 0 auto;
+    & > .Guest-Details {
+      width: 100%;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+
+      & > h6 {
+        font-size: 20px;
+        color: black;
+        font-weight: bold;
+        font-family: "Roboto", sans-serif;
+        border-bottom: 1px solid rgb(156, 153, 153);
+        padding: 10px 0;
+        margin-bottom: 25px;
+      }
+
+      & > .form-wrap {
+        & > form {
+          display: grid;
+          grid-template-columns: 300px 300px 300px;
+          column-gap: 100px;
+          row-gap: 30px;
+
+          & > div {
+            display: flex;
+            flex-direction: column;
+
+            & > label {
+              font-size: 18px;
+              color: black;
+              font-family: "Roboto", sans-serif;
+              font-weight: 500;
+              margin-bottom: 10px;
+            }
+
+            & > input {
+              padding: 6px;
+              border: 1px solid rgb(134, 131, 131);
+              outline: none;
+            }
+
+            & > select {
+              padding: 6px;
+            }
+
+            & > textarea {
+              resize: none;
+              height: 70px;
+              padding: 10px;
+              outline: none;
+              margin-bottom: 30px;
+            }
+          }
+
+          & > span {
+            font-size: 15px;
+            color: black;
             font-family: "Roboto", sans-serif;
-            width: 100%;
-            padding: 6px 0;
+            font-weight: 900;
+            width: 600px;
+          }
+
+          & > span:before {
+            content: "\2022";
+            font-size: 20px;
+            color: rgb(124, 121, 121);
+          }
+
+          & > button {
+            height: 40px;
+            width: 250px;
+            background-color: #33a2dc;
+            background: linear-gradient(to bottom, #36a7dd 0, #2f9ad8 100%);
+            color: #fff;
+            font-size: 14px;
+            border: 0;
+            cursor: pointer;
+            border-radius: 20px;
+            margin-top: 50px;
+            float: right;
           }
         }
       }

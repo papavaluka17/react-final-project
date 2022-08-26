@@ -14,11 +14,11 @@ export default function Contact() {
                     <div className="first-box">
                         <div className="input-2">
                             <label htmlFor="Name">Enter Your Name</label>
-                            <input type="text" placeholder="Name" name="Name" id="Name" />
+                            <input type="text" placeholder="Name" name="Name" id="Name" required />
                         </div>
                         <div className="input-2">
                             <label htmlFor="Email">Enter Your Email</label>
-                            <input type="email" placeholder="Email" name="Email" id="Email" />
+                            <input type="email" placeholder="Email" name="Email" id="Email" required />
                         </div>
                     </div>
                     <div className="subject-class">
@@ -27,10 +27,10 @@ export default function Contact() {
                     </div>
                     <div className="Textarea-class">
                         <label htmlFor="Message">Enter Your Message</label>
-                        <textarea name="Message" id="Message" placeholder="Message"></textarea>
+                        <textarea name="Message" id="Message" placeholder="Message" required></textarea>
                     </div>
                 </div>
-                <button type="Submit">Submit</button>
+                <input type="submit" />
             </form>
         </section>
     )
