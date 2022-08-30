@@ -7,7 +7,7 @@ import Dining from "../images/Dining.png"
 
 export default function Services() {
     return(
-        <section className="s-4">
+        <section className="s-4" id="Services">
              <h4>OUR SERVICES</h4>
             <div className="Content-wrap">
                 <div className="content">

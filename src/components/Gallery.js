@@ -21,7 +21,7 @@ import { Pagination } from "swiper";
 
 export default function Gallery() {
   return (
-    <div className="Slider">
+    <div className="Slider" id="Gallery">
       <h4>GALLERY</h4>
       <Swiper
         slidesPerView={1}

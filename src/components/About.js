@@ -4,7 +4,7 @@ export default function About() {
     const { t } = useTranslation();
 
     return (
-        <section className="s-2" >
+        <section className="s-2" id="About"  >
             <h4>{t ("About US")}</h4>
             <p>
                 {t ("About us Text")}

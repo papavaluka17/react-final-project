@@ -12,7 +12,7 @@ export default function Contact() {
         e.preventDefault();
         if (Value) {
             setDisabled(true);
-            setOpenModal(true)
+            setOpenModal(true);
         } else {
             setDisabled(false)
         }
@@ -20,7 +20,7 @@ export default function Contact() {
 
     return (
         <div>
-            <section className=" container ">
+            <section className=" container " id="Contact">
                 <h4>CONTACT US</h4>
                 <div className="contact-info">
                     <span>
@@ -51,7 +51,6 @@ export default function Contact() {
                         </div>
                     </div>
                     <input type="submit" onClick={Handle} />
-
                 </form>
             </section>
             {OpenModal && <Modal CLoseModal={setOpenModal} />}

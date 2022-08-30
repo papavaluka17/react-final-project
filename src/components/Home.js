@@ -6,7 +6,7 @@ export default function Home() {
     const { t } = useTranslation();
 
     return (
-        <section className="s-1" >
+        <section className="s-1" id='Home' >
             <div className="Homehead">
                 <h3>ANTON & LILY</h3>
                 <h5>{t ('Bed & Breakfast')}</h5>

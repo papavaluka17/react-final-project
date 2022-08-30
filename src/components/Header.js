@@ -11,21 +11,21 @@ import { useEffect, useState } from 'react';
 const resources = {
     en: {
         translation: require('../i18n/en.json')
-      },
-      ka: {
+    },
+    ka: {
         translation: require('../i18n/ka.json')
-      }
+    }
 };
 
 i18n
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: "ka",
-    interpolation: {
-      escapeValue: false
-    }
-  });
+    .use(initReactI18next)
+    .init({
+        resources,
+        lng: "ka",
+        interpolation: {
+            escapeValue: false
+        }
+    });
 
 
 export default function Header() {
@@ -33,14 +33,14 @@ export default function Header() {
     const [Language, setLanguage] = useState('en')
 
     useEffect(() => {
-      Changelanguage(Language)
+        Changelanguage(Language)
     }, [Language])
-  
+
     const { t } = useTranslation();
     function Changelanguage(lng) {
-      i18n.changeLanguage(lng);
+        i18n.changeLanguage(lng);
     }
-  
+
 
 
     return (
@@ -49,27 +49,28 @@ export default function Header() {
                 <nav>
                     <ul>
                         <li>
-                            <Link smooth className="nav-link" to={'/Main'} >{t("HOME")}</Link>
+                            <Link smooth className="nav-link" to={'/Main#Home'}>{t("HOME")}</Link>
                         </li>
                         <li>
-                            <Link smooth className="nav-link" to={'/Main'}>{t("ABOUT")}</Link>
+                            <Link smooth className="nav-link" to={'/Main#About'}>{t("ABOUT")}</Link>
                         </li>
                         <li>
-                            <Link smooth className="nav-link" to={'/Main'}>{t("ROOMS")}</Link>
+                            <Link smooth className="nav-link" to={'/Main#Rooms'}>{t("ROOMS")}</Link>
                         </li>
                         <li>
-                            <Link smooth className="nav-link" to={'/Main'}>{t("SERVICES")}</Link>
+                            <Link smooth className="nav-link" to={'/Main#Services'}>{t("SERVICES")}</Link>
                         </li>
                         <li>
-                            <Link smooth className="nav-link" to={'/Main'}>{t("GALLERY")}</Link>
+                            <Link smooth className="nav-link" to={'/Main#Gallery'}>{t("GALLERY")}</Link>
                         </li>
                         <li>
-                            <Link smooth className="nav-link" to={'/Main'}>{t("CONTACT")}</Link>
+                            <Link smooth className="nav-link" to={'/Main#Contact'}>{t("CONTACT")}</Link>
                         </li>
+
                     </ul>
                 </nav>
                 <Link to="BookaRoom" className="Btnlink">
-                    <button className="mainbtn" >{t ('BookARoom')}</button>
+                    <button className="mainbtn" >{t('BookARoom')}</button>
                 </Link>
                 <button className="lng" onClick={() => Language === 'en' ? setLanguage('ka') : setLanguage('en')} >{Language}</button>
                 <div className="menu" >
