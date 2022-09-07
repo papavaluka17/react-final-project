@@ -1,5 +1,4 @@
 import { HashLink as Link } from "react-router-hash-link"
-import menu from '../images/menu.jpg'
 import Social from "./Social"
 
 import i18n from "i18next";
@@ -7,6 +6,8 @@ import { initReactI18next } from "react-i18next";
 import { useTranslation } from 'react-i18next';
 import { useEffect, useState } from 'react';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTimes, faBars } from "@fortawesome/free-solid-svg-icons"
 
 const resources = {
     en: {
@@ -30,6 +31,7 @@ i18n
 
 export default function Header() {
 
+    const [Mobile, setMobile] = useState(false)
     const [Language, setLanguage] = useState('en')
 
     useEffect(() => {
@@ -47,35 +49,36 @@ export default function Header() {
         <header>
             <div className="Header">
                 <nav>
-                    <ul>
+                    <ul className={Mobile ? "Nav-Links-Mobile" : "Nav-Links"} 
+                      onClick={() => setMobile(false)}
+                    >
                         <li>
-                            <Link smooth className="nav-link" to={'/Main#Home'}>{t("HOME")}</Link>
+                            <Link smooth className="Links" to={'/Main#Home'}>{t("HOME")}</Link>
                         </li>
                         <li>
-                            <Link smooth className="nav-link" to={'/Main#About'}>{t("ABOUT")}</Link>
+                            <Link smooth className="Links" to={'/Main#About'}>{t("ABOUT")}</Link>
+                        </li >
+                        <li>
+                            <Link smooth className="Links" to={'/Main#Rooms'}>{t("ROOMS")}</Link>
                         </li>
                         <li>
-                            <Link smooth className="nav-link" to={'/Main#Rooms'}>{t("ROOMS")}</Link>
+                            <Link smooth className="Links" to={'/Main#Services'}>{t("SERVICES")}</Link>
                         </li>
                         <li>
-                            <Link smooth className="nav-link" to={'/Main#Services'}>{t("SERVICES")}</Link>
+                            <Link smooth className="Links" to={'/Main#Gallery'}>{t("GALLERY")}</Link>
                         </li>
                         <li>
-                            <Link smooth className="nav-link" to={'/Main#Gallery'}>{t("GALLERY")}</Link>
+                            <Link smooth className="Links" to={'/Main#Contact'}>{t("CONTACT")}</Link>
                         </li>
-                        <li>
-                            <Link smooth className="nav-link" to={'/Main#Contact'}>{t("CONTACT")}</Link>
-                        </li>
-
                     </ul>
                 </nav>
-                <Link to="BookaRoom" className="Btnlink">
+                <Link to="BookaRoom#BookaRoom" className="Btnlink">
                     <button className="mainbtn" >{t('BookARoom')}</button>
                 </Link>
                 <button className="lng" onClick={() => Language === 'en' ? setLanguage('ka') : setLanguage('en')} >{Language}</button>
-                <div className="menu" >
-                    <img className="menuicon" src={menu} alt="menu" />
-                </div>
+                <button className="menu" onClick={() => setMobile(!Mobile)} >
+                    {Mobile ? <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon> : <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>}
+                </button>
             </div>
             <Social />
         </header>

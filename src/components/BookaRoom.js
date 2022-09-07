@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 export default function BookaRoom() {
     return (
-        <div className="BookaRoom">
+        <div className="BookaRoom" id="BookaRoom">
             <h2>BOOK A ROOM</h2>
             <div className="box">
                 {

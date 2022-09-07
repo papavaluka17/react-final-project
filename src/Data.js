@@ -3,7 +3,7 @@ import Hotel4 from "./images/Hotel4.jpg"
 import Hotel2 from "./images/Hotel2.jpg"
 import Hotel1 from "./images/Hotel1.jpg"
 import Hotel3 from "./images/Hotel3.jpg"
-import Hotel5 from "./images/images.jpeg"
+import Hotel5 from "./images/robe.jpg"
 
 
 // N2 images import

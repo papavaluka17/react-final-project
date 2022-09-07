@@ -8,6 +8,18 @@ import { faTv, faWifi, faPhone, faKitchenSet, faBath, faShower, faVault, faTempe
 
 import arrow from "../images/arrow.webp"
 
+import React from "react";
+// Import Swiper React components
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+
+// import required modules
+import { Pagination } from "swiper";
+
 export default function Roominfo() {
     let params = useParams();
 
@@ -29,6 +41,41 @@ export default function Roominfo() {
                                 </div>
 
                                 <div className="slider-class">
+                                    <Swiper
+                                        slidesPerView={1}
+                                        spaceBetween={10}
+                                        pagination={{
+                                            clickable: true,
+                                        }}
+                                        // breakpoints={{
+                                        //     500: {
+                                        //         slidesPerView: 1,
+                                        //     },
+                                        //     880: {
+                                        //         slidesPerView: 2,
+                                        //     },
+                                        //     1150: {
+                                        //         slidesPerView: 3,
+                                        //         spaceBetween: 50,
+                                        //     },
+                                        // }}
+                                        modules={[Pagination]}
+                                        className="mySwiper"
+                                    >
+
+                                        <SwiperSlide className="swiper" >
+                                            <img className="swiper-img" src={item.img} alt="breakfast" />
+                                        </SwiperSlide>
+                                        <SwiperSlide className="swiper" >
+                                            <img className="swiper-img" src={item.img2} alt="minipool" />
+                                        </SwiperSlide>
+                                        <SwiperSlide className="swiper" >
+                                            <img className="swiper-img" src={item.img3} alt="bathroom" />
+                                        </SwiperSlide>
+                                        <SwiperSlide className="swiper" >
+                                            <img className="swiper-img" src={item.img4} alt="garden2" />
+                                        </SwiperSlide>
+                                    </Swiper>
                                 </div>
 
                                 <div className="Properties">
