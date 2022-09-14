@@ -46,41 +46,43 @@ export default function Header() {
 
 
     return (
-        <header>
-            <div className="Header">
-                <nav>
-                    <ul className={Mobile ? "Nav-Links-Mobile" : "Nav-Links"} 
-                      onClick={() => setMobile(false)}
-                    >
-                        <li>
-                            <Link smooth className="Links" to={'/Main#Home'}>{t("HOME")}</Link>
-                        </li>
-                        <li>
-                            <Link smooth className="Links" to={'/Main#About'}>{t("ABOUT")}</Link>
-                        </li >
-                        <li>
-                            <Link smooth className="Links" to={'/Main#Rooms'}>{t("ROOMS")}</Link>
-                        </li>
-                        <li>
-                            <Link smooth className="Links" to={'/Main#Services'}>{t("SERVICES")}</Link>
-                        </li>
-                        <li>
-                            <Link smooth className="Links" to={'/Main#Gallery'}>{t("GALLERY")}</Link>
-                        </li>
-                        <li>
-                            <Link smooth className="Links" to={'/Main#Contact'}>{t("CONTACT")}</Link>
-                        </li>
-                    </ul>
-                </nav>
-                <Link to="BookaRoom#BookaRoom" className="Btnlink">
-                    <button className="mainbtn" >{t('BookARoom')}</button>
-                </Link>
-                <button className="lng" onClick={() => Language === 'en' ? setLanguage('ka') : setLanguage('en')} >{Language}</button>
-                <button className="menu" onClick={() => setMobile(!Mobile)} >
-                    {Mobile ? <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon> : <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>}
-                </button>
-            </div>
-            <Social />
-        </header>
+        <section className="Header-section">
+            <header>
+                <div className="Header">
+                    <nav>
+                        <ul className={Mobile ? "Nav-Links-Mobile" : "Nav-Links"}
+                            onClick={() => setMobile(false)}
+                        >
+                            <li>
+                                <Link smooth className="Links" to={'/Main#Home'}>{t("HOME")}</Link>
+                            </li>
+                            <li>
+                                <Link smooth className="Links" to={'/Main#About'}>{t("ABOUT")}</Link>
+                            </li >
+                            <li>
+                                <Link smooth className="Links" to={'/Main#Rooms'}>{t("ROOMS")}</Link>
+                            </li>
+                            <li>
+                                <Link smooth className="Links" to={'/Main#Services'}>{t("SERVICES")}</Link>
+                            </li>
+                            <li>
+                                <Link smooth className="Links" to={'/Main#Gallery'}>{t("GALLERY")}</Link>
+                            </li>
+                            <li>
+                                <Link smooth className="Links" to={'/Main#Contact'}>{t("CONTACT")}</Link>
+                            </li>
+                        </ul>
+                    </nav>
+                    <Link to="BookaRoom#BookaRoom" className="Btnlink">
+                        <button className="mainbtn" >{t('BookARoom')}</button>
+                    </Link>
+                    <button className="lng" onClick={() => Language === 'en' ? setLanguage('ka') : setLanguage('en')} >{Language}</button>
+                    <button className="menu" onClick={() => setMobile(!Mobile)} >
+                        {Mobile ? <FontAwesomeIcon icon={faTimes}></FontAwesomeIcon> : <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>}
+                    </button>
+                </div>
+                <Social />
+            </header>
+        </section>
     )
 }

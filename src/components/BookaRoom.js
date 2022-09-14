@@ -15,6 +15,17 @@ export default function BookaRoom() {
                                 <div className="room-box2">
                                     <div className="img-class">
                                         <img src={item.img} alt={item.title} />
+                                        <div className="new-box">
+                                            <div className="Responsive-info">
+                                                <h3>{item.title}</h3>
+                                                <div className="responsive-content">
+                                                    <h6>From</h6>
+                                                    <Link to={`${item.id}`} className="responsive-moreinfo">
+                                                        <span>{item.Price} </span>
+                                                    </Link>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div className="content-box">
                                         <h3>{item.title}</h3>

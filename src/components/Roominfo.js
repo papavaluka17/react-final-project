@@ -47,18 +47,6 @@ export default function Roominfo() {
                                         pagination={{
                                             clickable: true,
                                         }}
-                                        // breakpoints={{
-                                        //     500: {
-                                        //         slidesPerView: 1,
-                                        //     },
-                                        //     880: {
-                                        //         slidesPerView: 2,
-                                        //     },
-                                        //     1150: {
-                                        //         slidesPerView: 3,
-                                        //         spaceBetween: 50,
-                                        //     },
-                                        // }}
                                         modules={[Pagination]}
                                         className="mySwiper"
                                     >
