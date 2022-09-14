@@ -1,15 +1,29 @@
 import { HotelInfo } from "../Data";
 import { Link } from "react-router-dom";
-
+import { useState } from "react";
 // images import
 
 export default function BookaRoom() {
+
+    const [LoadMore, setLoadMore] = useState(3)
+
+    const HotelMoreinfo = HotelInfo.slice(0, LoadMore)
+
+    function More() {
+        if (LoadMore <= 3) {
+            setLoadMore(LoadMore + LoadMore)
+        } else{
+            setLoadMore(LoadMore - 3)
+        }
+        
+    }
+
     return (
         <div className="BookaRoom" id="BookaRoom">
             <h2>BOOK A ROOM</h2>
             <div className="box">
                 {
-                    HotelInfo.map((item, index) => {
+                    HotelMoreinfo.map((item, index) => {
                         return (
                             <div key={index} className="room-box">
                                 <div className="room-box2">
@@ -47,6 +61,10 @@ export default function BookaRoom() {
                         )
                     })
                 }
+
+                <button onClick={() => More()}>
+                    Load More
+                </button>
             </div>
         </div>
     )

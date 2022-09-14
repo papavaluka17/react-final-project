@@ -13,13 +13,30 @@ import Hotel1_3 from "./images/hotel1-3.webp"
 import Hotel1_4 from "./images/hotel1-4.webp"
 import Hotel1_5 from "./images/hotel1-5.webp"
 
-// M3 images import
+// N3 images import
 import tophotel from "./images/tophotel.webp"
 import tophotel2 from "./images/tophotel2.webp"
 import tophotel3 from "./images/tophotel3.webp"
 import tophotel4 from "./images/tophotel4.webp"
 import tophotel5 from "./images/tophotel5.webp"
 
+// N4 images import
+import Image1 from "./images/image1.jpg"
+import Image2 from "./images/image2.jpg"
+import Image3 from "./images/image3.jpg"
+import Image4 from "./images/image4.jpg"
+
+// N5 images import
+import Image6 from "./images/image6.jpg"
+import Image7 from "./images/image7.jpg"
+import Image8 from "./images/image8.jpg"
+import Image9 from "./images/image9.jpg"
+
+// N6 images import
+import Image12 from "./images/image12.jpg"
+import Image13 from "./images/image13.jpg"
+import Image14 from "./images/image14.jpg"
+import Image15 from "./images/image15.jpg"
 
 // import Amenities:
 import AC from "./images/AC.png"
@@ -97,5 +114,71 @@ export const HotelInfo = [
         minibar: [minibar],
         Kitchen: [Kitchen],
         telephone: [telephone],
-    }
+    },
+
+    {
+        id: "4",
+        title: "Comfortable room",
+        Description: "Our Comfortable room are comfortable, roomy and elegant.",
+        Size: "  Size: 200 sq ft",
+        Beds: "  Beds: 1 Double(s)",
+        Price: "130$",
+        img: [Image1],
+        img1: [Image1],
+        img2: [Image2],
+        img3: [Image3],
+        img4: [Image4],
+        MoreInfo: "Elegant simplicity. Our Comfortable room give you the space and privacy you need to work or play on the road. The spacious 380 square foot rooms include an intimate lounge area, business workstation and views of the courtyard. Complete with all the regular amenities, our Superior Rooms also include a daily newspaper and water bottles.",
+        Accommodates: "Accommodates: 2",
+        AC: [AC],
+        tv: [tv],
+        wifi: [wifi],
+        minibar: [minibar],
+        Kitchen: [Kitchen],
+        telephone: [telephone],
+    },
+
+    {
+        id: "5",
+        title: "Average room",
+        Description: "Our Average room are comfortable, roomy and elegant.",
+        Size: "  Size: 180 sq ft",
+        Beds: "  Beds: 2 Single",
+        Price: "190$",
+        img: [Image6],
+        img1: [Image6],
+        img2: [Image7],
+        img3: [Image8],
+        img4: [Image9],
+        MoreInfo: "Elegant simplicity. Our Average room give you the space and privacy you need to work or play on the road. The spacious 380 square foot rooms include an intimate lounge area, business workstation and views of the courtyard. Complete with all the regular amenities, our Superior Rooms also include a daily newspaper and water bottles.",
+        Accommodates: "Accommodates: 2",
+        AC: [AC],
+        tv: [tv],
+        wifi: [wifi],
+        minibar: [minibar],
+        Kitchen: [Kitchen],
+        telephone: [telephone],
+    },
+
+    {
+        id: "6",
+        title: "Room & Breakfast",
+        Description: "Our room are comfortable, roomy and elegant.",
+        Size: "  Size: 180 sq ft",
+        Beds: "  Beds: 2 Single",
+        Price: "220$",
+        img: [Image13],
+        img1: [Image13],
+        img2: [Image12],
+        img3: [Image14],
+        img4: [Image15],
+        MoreInfo: "Elegant simplicity. Our room give you the space and privacy you need to work or play on the road. The spacious 380 square foot rooms include an intimate lounge area, business workstation and views of the courtyard. Complete with all the regular amenities, our Superior Rooms also include a daily newspaper and water bottles.",
+        Accommodates: "Accommodates: 2",
+        AC: [AC],
+        tv: [tv],
+        wifi: [wifi],
+        minibar: [minibar],
+        Kitchen: [Kitchen],
+        telephone: [telephone],
+    },
 ]
