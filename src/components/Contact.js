@@ -7,12 +7,19 @@ export default function Contact() {
     const [OpenModal, setOpenModal] = useState(false)
     const [Disabled, setDisabled] = useState(false)
     const [Value, setValue] = useState("")
+    const [Namevalue, setNamevalue] = useState("")
+    const [SubjectValue, setSubjectValue] = useState("")
+    const [Emailvalue, setEmailvalue] = useState("")
 
     function Handle(e) {
         e.preventDefault();
         if (Value) {
             setDisabled(true);
             setOpenModal(true);
+            setValue("")
+            setNamevalue("")
+            setSubjectValue("")
+            setEmailvalue("")
         } else {
             setDisabled(false)
         }
@@ -34,7 +41,7 @@ export default function Contact() {
                         <div className="first-box">
                             <div className="input-2">
                                 <label htmlFor="Name">Enter Your Name</label>
-                                <input type="text" placeholder="Name" name="Name" id="Name" />
+                                <input  value={Namevalue} onChange={(e) => setNamevalue(e.target.value)} type="text" placeholder="Name" name="Name" id="Name" />
                             </div>
                             <div className="input-2">
                                 <label htmlFor="Email">Enter Your Email</label>
@@ -43,11 +50,11 @@ export default function Contact() {
                         </div>
                         <div className="subject-class">
                             <label htmlFor="Subject">Enter Your Subject</label>
-                            <input type="text" placeholder="Subject" name="Subject" id="Subject" />
+                            <input  value={Emailvalue} onChange={(e) => setEmailvalue(e.target.value)} type="text" placeholder="Subject" name="Subject" id="Subject" />
                         </div>
                         <div className="Textarea-class">
                             <label htmlFor="Message">Enter Your Message</label>
-                            <textarea name="Message" id="Message" placeholder="Message" ></textarea>
+                            <textarea  value={SubjectValue} onChange={(e) => setSubjectValue(e.target.value)} name="Message" id="Message" placeholder="Message" ></textarea>
                         </div>
                     </div>
                     <input type="submit" onClick={Handle} />

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 
-export default function Modal({ CLoseModal, Value }) {
+export default function Modal({ CLoseModal }) {
 
     function HandleModal() {
         CLoseModal(false)

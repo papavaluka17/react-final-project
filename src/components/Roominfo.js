@@ -122,6 +122,7 @@ export default function Roominfo() {
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
 
                             <div className="Date">
@@ -151,6 +152,7 @@ export default function Roominfo() {
                                     <input type="Submit" className="btn" />
                                 </form>
                             </div>
+
                         </div>
                     )
                 })
