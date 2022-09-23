@@ -16,6 +16,7 @@
     "About us Text": "Hotel ANTON & LILY is one of the prestigious and low-budget hotels in Georgia. It is a place where customers can relax comfortably.A hotel that offers its guests high-level services  and creates a comfortable environment for them.",
     "Rooms": "OUR ROOMS",
     "Rooms-text": "ANTON & LILY hotel has several types of rooms, you can choose according tothe number and size of people.",
+    "Our-Services": "OUR SERVICES",
     "Breakfast": "Breakfast",
     "Breakfast-Text": "A breakfast tailored to your taste every morning",
     "Garden": "Garden",
@@ -27,5 +28,9 @@
     "Housekeeping": "Daily Housekeeping",
     "Housekeeping-Text": "A housekeeper will serve you every day in our hotel",
     "Dining-Service": "In-Room Dining Service",
-    "Dining-Service-text": "In our hotel you will find in-room dining service"
+    "Dining-Service-text": "In our hotel you will find in-room dining service",
+    "GUEST-REVIEW": "GUEST REVIEW",
+    "First-review": "We are glad that we spent the holidays in your hotel",
+    "Second-review": "Thanks for a good rest and fun",
+    "third-review": "Thanks for the good environment and happy time. We will visit you again"
 }

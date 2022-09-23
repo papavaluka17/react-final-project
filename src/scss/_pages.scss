@@ -867,6 +867,22 @@
             content: "\25C9";
           }
 
+          & > .Amenities-2 {
+            border-top: 1px solid black;
+            margin-top: 20px;
+            display: flex;
+            padding: 10px 0;
+
+            & > span {  
+              margin-right: 20px;
+
+              & > .icon {
+                font-size: 20px;
+              }
+            }
+
+          }
+
           @media (max-width: 670px) {
             margin: 30px 0;
             width: auto;
@@ -1158,14 +1174,13 @@
               @media (max-width: 500px) {
                 display: none;
               }
-            } 
+            }
           }
 
           @media (max-width: 900px) {
             display: flex;
             margin: 0 auto;
             margin-top: 20px;
-
           }
         }
 

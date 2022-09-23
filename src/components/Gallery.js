@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 // import images
 import breakfast from "../images/breakfast.jpg"
 import minipool from "../images/minipool.webp"
@@ -20,9 +22,12 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper";
 
 export default function Gallery() {
+
+  const { t } = useTranslation();
+  
   return (
     <div className="Slider" id="Gallery">
-      <h4>GALLERY</h4>
+      <h4>{t ("GALLERY")}</h4>
       <Swiper
         slidesPerView={1}
         spaceBetween={10}

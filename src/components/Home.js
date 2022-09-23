@@ -13,7 +13,7 @@ export default function Home() {
             </div>
             <img src={garden} alt='garden' />
             <div className='formwrapper'>
-                <form action='/'>
+                <form action='/BookaRoom'>
                     <div>
                         <label htmlFor='Checkin' >{t ("Check In")}</label>
                         <input id='Checkin' type='date' required />

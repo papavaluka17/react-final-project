@@ -39,13 +39,13 @@ import Image14 from "./images/image14.jpg"
 import Image15 from "./images/image15.jpg"
 
 // import Amenities:
-import AC from "./images/AC.png"
-import tv from "./images/tv.png"
-import wifi from "./images/wifi.png"
-import safe from "./images/safe.png"
-import minibar from "./images/minibar.png"
-import Kitchen from "./images/kitchen.jpg"
-import telephone from "./images/telephone.png"
+// import AC from "./images/AC.png"
+// import tv from "./images/tv.png"
+// import wifi from "./images/wifi.png"
+// import safe from "./images/safe.png"
+// import minibar from "./images/minibar.png"
+// import Kitchen from "./images/kitchen.jpg"
+// import telephone from "./images/telephone.png"
 
 
 export const HotelInfo = [
@@ -63,13 +63,6 @@ export const HotelInfo = [
         img4: [Hotel5],
         MoreInfo: "Affordable luxury. Our Junior Suites are the perfect option if you’re looking for a little extra luxury. With an open 400 square foot floor plan, the Junior Suites offer the extra space you need to spread out and enjoy the breathtaking views of the city skyline.",
         Accommodates: "Accommodates: 2",
-        AC: [AC],
-        tv: [tv],
-        wifi: [wifi],
-        safe: [safe],
-        minibar: [minibar],
-        Kitchen: [Kitchen],
-        telephone: [telephone],
     },
 
     {
@@ -86,12 +79,6 @@ export const HotelInfo = [
         img4: [Hotel1_5],
         MoreInfo: "Functional and comfortable. Sit back and enjoy one of our brand new 280 square foot Standard Rooms. Complete with courtyard views, stylish decor and natural light, our Standard Rooms are the perfect combination of function and comfort. Ideally suited for today’s business or leisure travelers.",
        Accommodates: "Accommodates: 2",
-        AC: [AC],
-        tv: [tv],
-        wifi: [wifi],
-        minibar: [minibar],
-        Kitchen: [Kitchen],
-        telephone: [telephone],
     },
 
     {
@@ -108,12 +95,7 @@ export const HotelInfo = [
         img4: [tophotel5],
         MoreInfo: "Elegant simplicity. Our Superior Rooms give you the space and privacy you need to work or play on the road. The spacious 380 square foot rooms include an intimate lounge area, business workstation and views of the courtyard. Complete with all the regular amenities, our Superior Rooms also include a daily newspaper and water bottles.",
         Accommodates: "Accommodates: 2",
-        AC: [AC],
-        tv: [tv],
-        wifi: [wifi],
-        minibar: [minibar],
-        Kitchen: [Kitchen],
-        telephone: [telephone],
+     
     },
 
     {
@@ -130,12 +112,7 @@ export const HotelInfo = [
         img4: [Image4],
         MoreInfo: "Elegant simplicity. Our Comfortable room give you the space and privacy you need to work or play on the road. The spacious 380 square foot rooms include an intimate lounge area, business workstation and views of the courtyard. Complete with all the regular amenities, our Superior Rooms also include a daily newspaper and water bottles.",
         Accommodates: "Accommodates: 2",
-        AC: [AC],
-        tv: [tv],
-        wifi: [wifi],
-        minibar: [minibar],
-        Kitchen: [Kitchen],
-        telephone: [telephone],
+ 
     },
 
     {
@@ -152,12 +129,7 @@ export const HotelInfo = [
         img4: [Image9],
         MoreInfo: "Elegant simplicity. Our Average room give you the space and privacy you need to work or play on the road. The spacious 380 square foot rooms include an intimate lounge area, business workstation and views of the courtyard. Complete with all the regular amenities, our Superior Rooms also include a daily newspaper and water bottles.",
         Accommodates: "Accommodates: 2",
-        AC: [AC],
-        tv: [tv],
-        wifi: [wifi],
-        minibar: [minibar],
-        Kitchen: [Kitchen],
-        telephone: [telephone],
+    
     },
 
     {
@@ -174,11 +146,5 @@ export const HotelInfo = [
         img4: [Image15],
         MoreInfo: "Elegant simplicity. Our room give you the space and privacy you need to work or play on the road. The spacious 380 square foot rooms include an intimate lounge area, business workstation and views of the courtyard. Complete with all the regular amenities, our Superior Rooms also include a daily newspaper and water bottles.",
         Accommodates: "Accommodates: 2",
-        AC: [AC],
-        tv: [tv],
-        wifi: [wifi],
-        minibar: [minibar],
-        Kitchen: [Kitchen],
-        telephone: [telephone],
     },
 ]

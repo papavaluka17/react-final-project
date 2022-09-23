@@ -1,4 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useTranslation } from "react-i18next";
+
 
 // Import Swiper styles
 import "swiper/css";
@@ -9,10 +11,13 @@ import "swiper/css/navigation";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default function Review() {
+
+    const { t } = useTranslation();
+
     return (
         <section className="s-5">
             <div className="review-box" >
-                <h4>GUEST REVIEW</h4>
+                <h4>{t ("GUEST-REVIEW")}</h4>
                 <span>***</span>
                 <div className="Slider-box">
                     <Swiper
@@ -28,9 +33,9 @@ export default function Review() {
                         modules={[Autoplay, Pagination, Navigation]}
                         className="mySwiper"
                     >
-                        <SwiperSlide className="slider-text">"We are glad that we spent the holidays in your hotel"</SwiperSlide>
-                        <SwiperSlide className="slider-text"> "Thanks for a good rest and fun"</SwiperSlide>
-                        <SwiperSlide className="slider-text">"Thanks for the good environment and happy time. We will visit you again."</SwiperSlide>
+                        <SwiperSlide className="slider-text">{t ("First-review")}</SwiperSlide>
+                        <SwiperSlide className="slider-text"> {t ("Second-review")}</SwiperSlide>
+                        <SwiperSlide className="slider-text">{t ("third-review")}</SwiperSlide>
                     </Swiper>
                 </div>
             </div>
