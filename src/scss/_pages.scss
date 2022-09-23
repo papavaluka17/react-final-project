@@ -35,12 +35,14 @@
 
           & > li {
             & > .Links {
+              position: relative;
               font-family: "Roboto", sans-serif;
               color: rgb(235, 226, 226);
               font-size: 16px;
               list-style: none;
               cursor: pointer;
               text-decoration: none;
+              padding: 0 10px;
 
               @media (max-width: 780px) {
                 text-align: center;
@@ -52,6 +54,21 @@
             }
             :hover {
               color: rgb(177, 170, 170);
+            }
+
+            & > .Links:after{
+              content: "";
+              position: absolute;
+              background-color: #696866;
+              height: 3px;
+              width: 0;
+              left: 0;
+              bottom: -8px;
+              transition: 0.3s;
+            }
+
+            & > .Links:hover:after{
+              width: 100%;
             }
           }
 
