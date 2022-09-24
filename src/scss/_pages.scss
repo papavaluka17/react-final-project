@@ -231,6 +231,7 @@
       }
 
       & > button {
+        cursor: pointer;
         width: 160px;
         height: 30px;
         background-color: rgb(29, 26, 26);
@@ -891,6 +892,7 @@
             padding: 10px 0;
 
             & > span {  
+              cursor: pointer;
               margin-right: 20px;
 
               & > .icon {

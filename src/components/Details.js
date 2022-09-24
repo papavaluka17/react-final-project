@@ -8,18 +8,18 @@ export default function Details() {
     const [Number, setNumber] = useState([])
     const [Request, setRequest] = useState([])
 
-    const Country = ["Country","Albania", "Algeria", "Armenia", "Australia", "Belgium", "Canada", "Egypt", "Georgia",
+    const Country = ["Country", "Albania", "Algeria", "Armenia", "Australia", "Belgium", "Canada", "Egypt", "Georgia",
         "Germany", "Italy", "Ukraine", "Uruguay", "Slovenia", "Libya"]
 
-        function submitevent(e) {
-            e.preventDefault()
-            alert("Congratulations! " + Name + " ,your reservation was placed.")
-            setName("")
-            setLastname("")
-            setEmail("")
-            setNumber("")
-            setRequest("")
-        }
+    function submitevent(e) {
+        e.preventDefault()
+        alert("Congratulations! " + Name + " ,your reservation was placed.")
+        setName("")
+        setLastname("")
+        setEmail("")
+        setNumber("")
+        setRequest("")
+    }
 
     return (
         <section className="s-7">
