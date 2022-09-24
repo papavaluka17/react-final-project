@@ -1,5 +1,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useTranslation } from "react-i18next";
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 
 // Import Swiper styles
@@ -9,13 +11,18 @@ import "swiper/css/navigation";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
+import { useEffect } from "react";
 
 export default function Review() {
 
     const { t } = useTranslation();
 
+    useEffect(() => {
+        Aos.init({ duration: 1500 })
+      }, [])
+
     return (
-        <section className="s-5">
+        <section data-aos="fade-up" className="s-5">
             <div className="review-box" >
                 <h4>{t ("GUEST-REVIEW")}</h4>
                 <span>***</span>

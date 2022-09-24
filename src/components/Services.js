@@ -5,14 +5,21 @@ import wifi from "../images/wifi.png"
 import Housekeeping from "../images/Housekeeping.png"
 import Dining from "../images/Dining.png"
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react"
+import Aos from "aos";
+import "aos/dist/aos.css"
 
 
 export default function Services() {
 
     const { t } = useTranslation();
 
+    useEffect(() => {
+        Aos.init({ duration: 1500 })
+    }, [])
+
     return(
-        <section className="s-4" id="Services">
+        <section data-aos="fade-up" className="s-4" id="Services">
              <h4>{t ("Our-Services")}</h4>
             <div className="Content-wrap">
                 <div className="content">

@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "@tippyjs/react": "^4.2.6",
     "alk-life": "^1.0.0",
+    "aos": "^3.0.0-beta.6",
     "arial-geo-bolditalic": "^1.0.0",
     "bootstrap": "^5.2.0",
     "i18next": "^21.8.14",
