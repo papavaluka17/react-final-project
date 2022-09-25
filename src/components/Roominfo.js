@@ -19,6 +19,7 @@ import "swiper/css/pagination";
 
 // import required modules
 import { Pagination } from "swiper";
+import Counter from "./Counter";
 
 export default function Roominfo() {
     let params = useParams();
@@ -141,14 +142,9 @@ export default function Roominfo() {
                                         <label htmlFor='Checkout' >Check-Out</label>
                                         <input id='Checkout' type='date' required />
                                     </div>
-                                    <div>
-                                        <label htmlFor='adult' >Adults</label>
-                                        <input id='adult' type='number' min='0' max='2' required />
-                                    </div>
-                                    <div>
-                                        <label htmlFor='Kids' >Kids</label>
-                                        <input id='Kids' type='number' min='0' max='1' />
-                                    </div>
+
+                                    <Counter />
+
                                     <input type="Submit" className="btn" />
                                 </form>
                             </div>
