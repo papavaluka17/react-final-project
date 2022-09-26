@@ -18,7 +18,7 @@ import "swiper/css/pagination";
 
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination} from "swiper";
 import Counter from "./Counter";
 
 export default function Roominfo() {
@@ -148,6 +148,7 @@ export default function Roominfo() {
                                     <input type="Submit" className="btn" />
                                 </form>
                             </div>
+                            
 
                         </div>
                     )
