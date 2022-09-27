@@ -31,22 +31,22 @@ export default function Details() {
                     <div className="form-wrap">
                         <form method="POST" onSubmit={submitevent}>
                             <div>
-                                <label htmlFor="firstname">Invalid name</label>
+                                <label htmlFor="firstname">First name</label>
                                 <input value={Name} onChange={(e) => setName(e.target.value)} type="text" id="firstname" name="firstname" required />
                             </div>
 
                             <div>
-                                <label htmlFor="lastname">Invalid last name</label>
+                                <label htmlFor="lastname">Last name</label>
                                 <input value={Lastname} onChange={(e) => setLastname(e.target.value)} type="text" id="lastname" name="lastname" required />
                             </div>
 
                             <div>
-                                <label htmlFor="email">Invalid email address</label>
+                                <label htmlFor="email">Email address</label>
                                 <input value={Email} onChange={(e) => setEmail(e.target.value)} type="email" id="email" name="email" required />
                             </div>
 
                             <div>
-                                <label htmlFor="text"> Invalid phone number</label>
+                                <label htmlFor="text">Phone number</label>
                                 <input value={Number} onChange={(e) => setNumber(e.target.value)} type="text" id="text" name="text" required />
                             </div>
 
